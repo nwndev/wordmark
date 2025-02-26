@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+    font-family: "Editorial";
+    src: url("./fonts/Editorial.otf");
+}
+
+body {
+    font-family: "Space Mono", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #252525;
+    color: rgb(107, 107, 107);
+    overflow: hidden;
+}
+
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 100px;
+    height: auto;
+    color: rgb(107, 107, 107);
+    font-size: 150%;
+    font-family: "Editorial";
+}
+
+.word {
+    color: #ffffff;
+    font-family: "Editorial";
+    font-size: 400%;
+}
+
+.container {
+    text-align: center;
+}
+
+button {
+    font-family: "Space Mono", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: rgb(77, 77, 77);
+    border: none;
+    border-radius: 5px;
+    background: none;
+    outline: none;
+    border: none;
+    transition: 0.3s color;
+}
+
+button:hover {
+    color: rgb(126, 126, 126);
+}
+
+.button-save:focus {
+    color: rgb(250, 208, 19)
+}
+
+.footer {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: rgb(77, 77, 77);
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.links {
+    color: rgb(77, 77, 77);
+    transition: 0.2s color;
+}
+
+.links:hover {
+    color: white
+}
+
+.info-text {
+    margin-bottom: 50px;
+    font-size: 14px;
+    color: #555;
+}
+
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: translateY(20px);
+    z-index: 1000;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: rgb(49, 49, 49);
+    margin: 15% auto; 
+    padding: 20px; 
+    width: 300px; 
+    text-align: right;
+    border-radius: 10px;
+    opacity: 0;
+    transform: scale(0.7);
+    animation: popUp 0.3s forwards;
+    color: rgb(87, 87, 87);
+}
+
+@keyframes popUp {
+    to {
+        opacity: 1; /* End state of the animation */
+        transform: scale(1); /* End state of the scale */
+    }
+}
+
+.close-button {
+    color: rgb(87, 87, 87);
+    float: right;
+    font-size: 28px;
+    transition: 0.2s color;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: rgb(126, 126, 126);
+    text-decoration: none;
+    cursor: pointer;
+}

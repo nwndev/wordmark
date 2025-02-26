@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wordmark</title>
+    <script src="https://kit.fontawesome.com/695b6357ac.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./img/icon.png">
+</head>
+<body>
+    <div class="container">
+        <a class="logo">wordmark</a>
+        <h1 id="word" class="word"></h1>
+        <p id="definition"></p>
+        <button id="randomButton" onclick="shuffle()">shuffle <i class="fa-solid fa-shuffle"></i></button>
+        <button id="saveButton" class="button-save" onclick="pop()">save <i class="fa-solid fa-bookmark"></i></button>
+        <button id="historyButton" onclick="pop()">history <i class="fa-solid fa-clock-rotate-left"></i></button>
+    </div>
+    <div id="historyModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button"><i class="fa-solid fa-xmark"></i></span>
+            <h2 style="text-align: left; font-family: 'Editorial'; font-size: 200%;">Copied words</h2>
+            <ul id="modalHistoryList" style="font-size: large;"></ul>
+        </div>
+    </div>
+    <div id="toast" class="toast"></div>
+    <div class="info-text footer">Generated word can take some moment to appear, due to the API limitations.</div>
+    <p class="footer">Dibuat dengan <i class="fa-solid fa-heart" style="color:white;"></i> oleh yoyo &#8226 <a href="https://github.com/nwndev" class="links">sources</a> <i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+    <script src="script.js"></script>
+</body>
+</html>
