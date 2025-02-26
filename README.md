@@ -3,6 +3,8 @@ Wordmark, sebuah generator kosakata dalam bahasa inggris.
 > Website ini adalah sebuah proyek kecil-kecilan untuk mengisi waktu luang dan menumpahkan ide-ideku.
 # Cara Bekerjanya
 Aku menggunakan 2 API untuk membangun website ini. Satu untuk generate kosakata, dan satu lagi untuk generate definisi dari kosakata itu. Di websitenya, kamu hanya memerlukan menekan tombol Shuffle untuk generate kosakata secara acak. Ada pula tombol Save untuk menyalin kosakata saat ini, dan juga History untuk melihat riwayat kosakata yang disalin.
+# Limitasi
+Berdasarkan informasi yang ku baca, website ini hanya bisa generate 2,000 (dua ribu) kosakata secara acak per hari. Dikarenakan limitasi yang diterapkan pada API pihak ketiga.
 # Sumber Daya
 Kosakata --> https://random-word-api.herokuapp.com
 Definisi --> https://dictionaryapi.dev
